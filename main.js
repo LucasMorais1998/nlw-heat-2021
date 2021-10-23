@@ -6,7 +6,7 @@
         
 const linksSocialMedia = {
     github: "LucasMorais1998",
-    youtube: "maykbrito",
+    youtube: "/channel/UCW9R4C2DzmsVoGjMG75Akew/featured",
     facebook: "maykbrito",
     instagram: "lucasms98_",
     twitter: "lucasmds198",
