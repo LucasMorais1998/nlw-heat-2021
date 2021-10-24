@@ -1,16 +1,15 @@
 * {
   margin: 0;
+  
 }
 
 html, body {
   --black: hsl(240, 6%, 13%);
-  --grey: hsl (240, 9%, 89%);
-
+  --grey: rgb(240, 240, 248);
   height: 100%;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   color:white;
-  
 }
 
 body {
@@ -19,9 +18,10 @@ body {
 }
 
 main {
-  background: url(images/background.svg);
-  width: 375px;
-  height: 812px;
+  background: url(images/background.svg) no-repeat center/cover;
+  width: 100vw;
+  min-height: 812px;
+  height: 100vh;
 }
 
 .container {
@@ -33,76 +33,82 @@ main {
   color: var(--grey);
 }
 
+.gitIcon {
+  color:red;
+}
+
 .avatar {
   width: 10rem;
   margin: 11.5rem auto 0;
-
   position: relative;
+  
 }
 
 .avatar span {
   position: absolute;
   top: -15px;
   z-index: 1;
+  
 }
 
 .avatar > img {
   width: 10rem;
   height: 11.5rem;
   object-fit: cover;
-
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
 
+
 h1 {
   font-size: 1.5rem;
-
   margin-top: 1.5rem;
+  cursor: default;
 }
 
 a {
   color: var(--grey);
   text-decoration: none;
-
   margin-top: 0.25rem;
-
   display: flex;
   gap: 0.75rem;
-
   justify-content: center;
   align-items: center;
 }
 
+a span:hover {
+  transform: scale(1.1);
+  transform: perspective(1.2);
+}
+
+a i .fab {
+  background-color: red;
+}
+
 p {
   margin-top: 2rem;
+  cursor: default;
 }
 
 ul {
   margin-top: 4rem;
-
   list-style: none;
   padding: 0;
-
   display: flex;
   gap: 0.5rem;
-
   justify-content: center;
 }
 
 li a img{
   border: 2px solid transparent;
   border-radius: 18px;
-  background-image: linear-gradient(white, black), radial-gradient(circle at top left, red, orange);
+  background-image: linear-gradient(white, black), radial-gradient(circle at top left, #01B3A7, #FDE06A);
   background-origin: border-box;
   background-clip: content-box, border-box;
-
   margin: 2px;
   transition: 300ms;
 }
 
 li a img:hover {
   transform: scale(1.4);
-  background-image: linear-gradient(black, white), radial-gradient(circle at bottom right, red, orange);
-  
+  background-image: linear-gradient(black, white), radial-gradient(circle at bottom right, #01B3A7, #FDE06A);
 }
-
