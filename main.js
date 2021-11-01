@@ -1,9 +1,3 @@
-// let accept = true
-// let user = {name: "Lucas", phone: 123456789, age: 22// }
-// alert(user.age)
-      
-// function showMeSomething(){}
-        
 const linksSocialMedia = {
     github: "LucasMorais1998",
     youtube: "/channel/UCW9R4C2DzmsVoGjMG75Akew/featured",
@@ -33,7 +27,6 @@ function getGitHubProfileInfos(){
             userPhoto.src = data.avatar_url
             userLogin.textContent = data.login
         })
-    
 }
       
 getGitHubProfileInfos()
